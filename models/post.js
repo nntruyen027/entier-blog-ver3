@@ -1,9 +1,8 @@
 var mongoose = require('mongoose');
 
 const postSchema = mongoose.Schema({
-    title: {
-        String
-    },
+    title: String,
+    author: String,
     categogy: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'categogy'
@@ -11,7 +10,7 @@ const postSchema = mongoose.Schema({
     summary: String,
     detail: String,
     image: String,
-    date: mongoose.Schema.Types.Date
+    date: String
 })
 
 

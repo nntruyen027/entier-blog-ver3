@@ -1,0 +1,28 @@
+<main>
+    <h1>TÂM SỰ TUỔI XANH</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ea magni cum repellendus optio. Hic
+        laudantium iure minima itaque, laboriosam asperiores nostrum obcaecati reprehenderit, ipsam
+        architecto
+        aperiam animi aliquam eos?</p>
+    <div class="container main">
+        <% for( let index=0; index < data.length; index++ ) { %>
+            <%- include('post-item', {post: data[index]}) %>
+                <% } %>
+
+    </div>
+    <div class="container topic">
+        <h1>Các chủ đề</h1>
+        <a href="">Câu chuyên phân tích yêu cầu</a>
+        <a href="">Trải nghiệm của Nhà thiết kế</a>
+        <a href="">Cái khổ của Coder</a>
+        <a href="">Nỗi lòng của Tester</a>
+        <a href="">Con đường của Quản lý dự án</a>
+        <a href="">Dân IT và cái kết</a>
+</main>
+
+<script>
+    fetch('/post/data')
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
+</script>

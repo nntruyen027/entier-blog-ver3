@@ -1,0 +1,99 @@
+<%- include('head', {title: 'Trang chủ' , link: 'home' }) %>
+
+    <main>
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-title">Entier Blog</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia provident vero
+                    ipsam quisquam iure eveniet porro ut. Facilis recusandae similique consequatur quae quasi
+                    aliquid,
+                    aperiam tenetur fuga velit, doloribus nobis commodi reiciendis iure! Assumenda aliquid
+                    sequi,
+                    voluptates
+                    fugiat excepturi minima esse quod, sed a, voluptatem libero nostrum explicabo doloremque
+                    laborum
+                    eum!
+                    Harum aspernatur error, nulla minus vitae, quo ad eaque eveniet consequuntur atque inventore
+                    quaerat
+                    ipsa placeat excepturi vel doloremque doloribus quibusdam sequi exercitationem maxime
+                    perferendis,
+                    ab
+                    dignissimos qui ducimus?</p>
+                <a href="#" class="banner-contact-button">Tham gia</a>
+            </div>
+            <img src="/images/home/banner.jpg" alt="" class="banner-image">
+            <div class="banner-ellipse"></div>
+        </div>
+
+        <div class="latest-news">
+            <div class="news-tittle">Tôi đi học code</div>
+            <div class="news-date">17-04-2023</div>
+            <summary class="news-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa et
+                voluptate,
+                pariatur ipsum quia, laboriosam cumque ad molestiae quo, non ducimus numquam rem quas architecto
+                sunt
+                corporis dolorum aut voluptatem tempora sequi aperiam excepturi quos provident? Autem adipisci
+                voluptate
+                ipsa est quam aperiam repellendus earum tenetur nemo obcaecati, totam nulla id facilis ex
+                possimus
+                animi
+                laboriosam! Temporibus cupiditate ea assumenda modi cum exercitationem sed illum obcaecati
+                maiores
+                enim
+                ratione itaque et quos voluptate quis, odio, fugit ipsa, repellat delectus debitis rem eum
+                deserunt.
+                Provident veritatis id officiis amet fuga ratione, molestias nihil, tempore earum reiciendis
+                unde
+                quidem
+                consectetur saepe eveniet! <a href="#">Xem thêm...</a></summary>
+        </div>
+
+        <%- include('categogy') %>
+    </main>
+
+    <div class="contact-background">
+    </div>
+    <div class="contact-container">
+        <div class="contact">
+            <div class="close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></div>
+            <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
+            <form action="/" method="post" id="contact-form">
+                <table>
+                    <tr>
+                        <td class="contact-name"><input name="contact-name" type="text" placeholder="Họ tên">
+                        </td>
+                        <td class="contact-mail"><input name="contact-mail" type="text" placeholder="E-mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contact-phone"><input name="contact-phone" type="text" placeholder="Điện thoại">
+                        </td>
+                        <td class="contact-address"><input name="contact-address" type="text" placeholder="Địa chỉ">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select name="contact-who" id="contact-who">
+                                <option value="Không rõ" class="who" selected>Bạn là ai?</option>
+                                <option value="Học sinh - sinh viên">Học sinh - sinh viên</option>
+                                <option value="Nhà phân tích">Nhà phân tích</option>
+                                <option value="Nhà thiết kế">Nhà thiết kế</option>
+                                <option value="Lập trình viên">Lập trình viên</option>
+                                <option value="Kiểm thử viên">Kiểm thử viên</option>
+                                <option value="Quản lý dự án">Quản lý dự án</option>
+                                <option value="Khác">Khác</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="contact-other" id="contact-other" cols="40" rows="10"
+                                placeholder="Bạn có điều gì muốn nói?"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="contact-submit" colspan="2"><input type="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>

@@ -5,14 +5,12 @@ var postRouter = require('./post');
 
 /* GET admin page. */
 router.get('/', function (req, res, next) {
-    var file_path = path.join(path.join(__dirname.replace('routes', 'views'), 'admin/index.html'));
-    res.sendFile(file_path)
+    res.render('layouts-admin', { title: 'Trang chủ', link: 'home', body: 'home' })
 });
 
 
 router.get('/introduce', function (req, res, next) {
-    var file_path = path.join(path.join(__dirname.replace('routes', 'views'), 'admin/introduce.html'));
-    res.sendFile(file_path)
+    res.render('layouts-admin', { title: 'Giới thiệu', link: 'introduce', body: 'introduce' })
 });
 
 router.use('/post', postRouter);

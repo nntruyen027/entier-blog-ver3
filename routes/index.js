@@ -7,8 +7,7 @@ const passport = require('../configs/passport');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  var file_path = path.join(path.join(__dirname.replace('routes', 'views'), 'index.html'));
-  res.sendFile(file_path)
+  res.render('layouts', { title: 'Trang chủ', link: 'home', body: 'home', data: '' })
 });
 
 
@@ -34,33 +33,21 @@ router.post('/', (req, res, next) => {
 /* GET introduce page */
 
 router.get('/introduce', (req, res, next) => {
-  var file_path = path.join(path.join(__dirname.replace('routes', 'views'), 'introduce.html'));
-  res.sendFile(file_path)
+  res.render('layouts', { title: 'Giới thiệu', link: 'introduce', body: 'introduce', data: '' })
 })
 
 
 router.get('/post', (req, res, next) => {
-  var file_path = path.join(path.join(__dirname.replace('routes', 'views'), 'news.html'));
-  res.sendFile(file_path)
-})
-
-router.get('/post/data', (req, res, next) => {
   postModel.find({})
     .then(data => {
-      console.log(data)
-      res.json({ data: data });
-    })
-    .catch(err => {
-      console.log(err)
-      res.json({ data: err });
+      res.render('layouts', { title: 'Bài viết', link: 'news', body: 'news', data: data })
     })
 })
 
 /* GET login page */
 
 router.get('/login', (req, res, next) => {
-  var file_path = path.join(path.join(__dirname.replace('routes', 'views'), 'login.html'));
-  res.sendFile(file_path);
+  res.render('login')
 })
 
 /* POST login page */

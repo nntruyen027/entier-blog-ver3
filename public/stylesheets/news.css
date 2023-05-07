@@ -48,7 +48,6 @@ a {
     box-shadow: 1px 1px 3px #696868;
     border-radius: 10px;
     padding: 20px;
-    height: 200px;
     margin: 20px 0;
 }
 
@@ -70,8 +69,12 @@ a {
 }
 
 .post p {
+    margin-top: 0;
+    display: inline-block;
     color: #4e4e4e;
     text-align: justify;
+    height: 90px;
+    width: 100%;
 }
 
 .post-topic,
