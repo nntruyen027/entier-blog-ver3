@@ -1,0 +1,81 @@
+/* css for container */
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: inline-block;
+    margin-top: 10px;
+    width: 70%;
+}
+
+.container.topic {
+    position: absolute;
+    top: 168px;
+    right: 20px;
+    width: 20%;
+}
+
+.container.topic a {
+    display: block;
+    text-decoration: none;
+    margin: 20px 0;
+    background-color: rgb(46, 46, 250);
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.container.topic a:hover {
+    background-color: rgb(53, 53, 174);
+}
+
+
+.container h2::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 0px;
+    margin-top: 2px;
+    background-color: black;
+}
+
+/* css for post */
+
+.post {
+    display: block;
+    box-shadow: 1px 1px 3px #696868;
+    border-radius: 10px;
+    padding: 20px;
+    height: 200px;
+    margin: 20px 0;
+}
+
+.post-content {
+    width: 60%;
+    display: inline-block;
+}
+
+.post img {
+    display: inline-block;
+    width: 36%;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.post-author {
+    margin-bottom: -10px;
+    font-size: 14px;
+}
+
+.post p {
+    color: #4e4e4e;
+    text-align: justify;
+}
+
+.post-topic,
+.post-date {
+    display: inline-block;
+    margin-right: 30px;
+}

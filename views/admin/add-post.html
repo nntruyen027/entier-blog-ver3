@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entier Blog</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/add-post.css">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/all.min.css">
+    <script src="/javascripts/all.js"></script>
+    <script src="/javascripts/all.min.js"></script>
+    <script src="/javascripts/home.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#">Entier Blog</a>
+        <div class="top-menu">
+            <a href="/admin/">Trang Chủ</a><a href="/admin/introduce">Giới Thiệu</a><a href="/admin/post">Bài
+                Viết</a><a href="/admin/add-post">Thêm bài viết</a><input type="text" placeholder="Tìm kiếm gì đó?"><a
+                href="#" class="search"></a>
+        </div>
+    </header>
+    <main>
+
+
+        <form class="post" action="" method="post">
+            <h2>Thêm tin</h2>
+            <table>
+                <tr>
+                    <td class="post-title"><input name="title" type="text" placeholder="Tiêu đề"></td>
+                    <td class="post-img"><input name="image" type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select name="categogy" id="post-categogy">
+                            <option value="64577f14326d09b6f73a024f" class="who" selected>Thể loại</option>
+                            <option value="64577e7ddaf0e4da306e3f20">Câu chuyện Phân tích yêu cầu</option>
+                            <option value="64577e7ddaf0e4da306e3f21">Trải nghiệm của Nhà thiết kế</option>
+                            <option value="64577e7ddaf0e4da306e3f22">Cái khổ của Coder</option>
+                            <option value="64577f14326d09b6f73a024d">Nỗi lòng của Tester</option>
+                            <option value="64577f14326d09b6f73a024e">Con đường của Quản lý dự án</option>
+                            <option value="64577f14326d09b6f73a024f">Dân IT và cái kết</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="summary" id="post-summary" cols="40" rows="3"
+                            placeholder="Tóm tắt bài đăng"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="detail" id="post-detail" cols="40" rows="10"
+                            placeholder="Bạn có điều gì muốn nói?"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="post-submit" colspan="2"><input type="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <a href="" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="" class="intagram"><i class="fa-brands fa-instagram"></i></a>
+
+    </footer>
+</body>
+
+</html>

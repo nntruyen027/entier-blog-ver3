@@ -1,0 +1,157 @@
+* {
+    font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    color: black;
+}
+
+::placeholder {
+    font-style: italic;
+    color: #838383;
+}
+
+body {
+    margin: 0;
+}
+
+
+/*css for header*/
+header {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+header a:hover {
+    color: rgb(87, 86, 86);
+}
+
+header>a {
+    margin-left: 110px;
+    font-size: 40px;
+}
+
+header .top-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+}
+
+header .top-menu a {
+    display: inline-block;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    font-size: 16px;
+    font-style: normal;
+}
+
+header input {
+    display: inline-block;
+    height: 10px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 1px solid #b8b8b8;
+}
+
+
+/*css for main*/
+main {
+    margin-top: 80px;
+    margin-left: 120px;
+    margin-right: 60px;
+}
+
+/*css for news-category*/
+.news-category {
+    margin: 60px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.news-category h1 {
+    margin-bottom: -6px;
+}
+
+.news-category .item {
+    display: inline-block;
+    width: 300px;
+    height: 510px;
+    margin: 20px;
+    background-color: #bfc4f9;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0 #7a7a7a;
+}
+
+.news-category .item .item-name {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.news-category .item .item-more {
+    display: inline-block;
+    text-decoration: none;
+    background: #2639ED;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 16px;
+}
+
+.news-category .item-more:hover {
+    background: #4d5ce2;
+}
+
+.news-category .item-image {
+    width: 300px !important;
+    height: 400px !important;
+    border-radius: 15px 15px 0 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+
+/*css for footer*/
+footer {
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+    margin-left: 120px;
+    margin-right: 60px;
+}
+
+footer a {
+    font-size: 24px;
+    margin: 0 5px
+}
+
+/*css for container*/
+.container {
+    margin: 50px 0;
+}
+
+.container>h2::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin-top: 2px;
+    background-color: black;
+}
+
+.container>p {
+    text-align: justify;
+}

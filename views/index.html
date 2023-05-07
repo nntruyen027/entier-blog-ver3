@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entier Blog</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <link rel="stylesheet" href="/stylesheets/all.min.css">
+    <script src="/javascripts/jquery-3.6.4.min.js"></script>
+    <script src="/javascripts/all.js"></script>
+    <script src="/javascripts/all.min.js"></script>
+    <script src="/javascripts/home.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="/">Entier Blog</a>
+        <div class="top-menu">
+            <a href="/">Trang Chủ</a><a href="/introduce">Giới Thiệu</a><a href="/post">Bài
+                Viết</a><input type="text" placeholder="Tìm kiếm gì đó?"><a href="#" class="search"></a>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="banner-content">
+                <div class="banner-title">Entier Blog</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia provident vero
+                    ipsam quisquam iure eveniet porro ut. Facilis recusandae similique consequatur quae quasi aliquid,
+                    aperiam tenetur fuga velit, doloribus nobis commodi reiciendis iure! Assumenda aliquid sequi,
+                    voluptates
+                    fugiat excepturi minima esse quod, sed a, voluptatem libero nostrum explicabo doloremque laborum
+                    eum!
+                    Harum aspernatur error, nulla minus vitae, quo ad eaque eveniet consequuntur atque inventore quaerat
+                    ipsa placeat excepturi vel doloremque doloribus quibusdam sequi exercitationem maxime perferendis,
+                    ab
+                    dignissimos qui ducimus?</p>
+                <a href="#" class="banner-contact-button">Tham gia</a>
+            </div>
+            <img src="/images/home/banner.jpg" alt="" class="banner-image">
+            <div class="banner-ellipse"></div>
+        </div>
+
+        <div class="latest-news">
+            <div class="news-tittle">Tôi đi học code</div>
+            <div class="news-date">17-04-2023</div>
+            <summary class="news-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa et voluptate,
+                pariatur ipsum quia, laboriosam cumque ad molestiae quo, non ducimus numquam rem quas architecto sunt
+                corporis dolorum aut voluptatem tempora sequi aperiam excepturi quos provident? Autem adipisci voluptate
+                ipsa est quam aperiam repellendus earum tenetur nemo obcaecati, totam nulla id facilis ex possimus animi
+                laboriosam! Temporibus cupiditate ea assumenda modi cum exercitationem sed illum obcaecati maiores enim
+                ratione itaque et quos voluptate quis, odio, fugit ipsa, repellat delectus debitis rem eum deserunt.
+                Provident veritatis id officiis amet fuga ratione, molestias nihil, tempore earum reiciendis unde quidem
+                consectetur saepe eveniet! <a href="#">Xem thêm...</a></summary>
+        </div>
+
+        <div class="news-category">
+            <h1>Lục đạo luân hồi của Software Engineer</h1>
+
+            <div class="item">
+                <img src="/images/home/BA.jpg" alt="" class="item-image">
+                <div class="item-name">Câu chuyện phân tích yêu cầu</div>
+                <a href="#" class="item-more">Chi tiết</a>
+            </div>
+            <div class="item">
+                <img src="/images/home/Designer.jpg" alt="" class="item-image">
+                <div class="item-name">Trải nghiệm của Nhà thiết kế</div>
+                <a href="#" class="item-more">Chi tiết</a>
+            </div>
+            <div class="item">
+                <img src="/images/home/Dev.jpg" alt="" class="item-image">
+                <div class="item-name">Cái khổ của Coder</div>
+                <a href="#" class="item-more">Chi tiết</a>
+            </div>
+            <div class="item">
+                <img src="/images/home/Tester.jpg" alt="" class="item-image">
+                <div class="item-name">Nỗi lòng của Tester</div>
+                <a href="#" class="item-more">Chi tiết</a>
+            </div>
+            <div class="item">
+                <img src="/images/home/Project.png" alt="" class="item-image">
+                <div class="item-name">Con đường của Quản lý dự án</div>
+                <a href="#" class="item-more">Chi tiết</a>
+            </div>
+            <div class="item">
+                <img src="/images/home/sad.jpg " alt="" class="item-image">
+                <div class="item-name">Dân IT và cái kết</div>
+                <a href="#" class="item-more">Chi tiết</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="contact-background">
+    </div>
+    <div class="contact-container">
+        <div class="contact">
+            <div class="close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></div>
+            <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
+            <form action="/" method="post" id="contact-form">
+                <table>
+                    <tr>
+                        <td class="contact-name"><input name="contact-name" type="text" placeholder="Họ tên"></td>
+                        <td class="contact-mail"><input name="contact-mail" type="text" placeholder="E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td class="contact-phone"><input name="contact-phone" type="text" placeholder="Điện thoại"></td>
+                        <td class="contact-address"><input name="contact-address" type="text" placeholder="Địa chỉ">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select name="contact-who" id="contact-who">
+                                <option value="Không rõ" class="who" selected>Bạn là ai?</option>
+                                <option value="Học sinh - sinh viên">Học sinh - sinh viên</option>
+                                <option value="Nhà phân tích">Nhà phân tích</option>
+                                <option value="Nhà thiết kế">Nhà thiết kế</option>
+                                <option value="Lập trình viên">Lập trình viên</option>
+                                <option value="Kiểm thử viên">Kiểm thử viên</option>
+                                <option value="Quản lý dự án">Quản lý dự án</option>
+                                <option value="Khác">Khác</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="contact-other" id="contact-other" cols="40" rows="10"
+                                placeholder="Bạn có điều gì muốn nói?"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="contact-submit" colspan="2"><input type="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <a href="" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="" class="intagram"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
+</body>
+
+</html>

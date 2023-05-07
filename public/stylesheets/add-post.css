@@ -1,0 +1,80 @@
+main {
+    margin-top: 100px;
+}
+
+.post {
+    margin-top: 20px !important;
+    display: block;
+    width: 98%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #323232;
+}
+
+.post h2 {
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #57c9f3;
+    padding: 14px;
+}
+
+.post table {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.post table td {
+    margin: 0 10px;
+    height: 40px;
+}
+
+.post table td input {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #c1d4f1;
+    height: 20px;
+    padding: 10px;
+}
+
+#post-categogy {
+    width: 98%;
+    height: 40px;
+    padding: 6px;
+    border: 0;
+    border-bottom: 1px solid #c1d4f1;
+    font-style: italic;
+    color: #838383;
+}
+
+#post-categogy>* {
+    font-style: normal;
+}
+
+.post textarea {
+    width: 96%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #c1d4f1;
+}
+
+.post-submit {
+    text-align: center;
+
+}
+
+.post-submit input {
+    height: auto !important;
+    width: 80px !important;
+    border-radius: 5px;
+    background-color: rgb(53, 53, 245);
+    color: white;
+    font-size: medium;
+    margin-top: 30px;
+}
+
+.post-submit input:hover {
+    cursor: pointer;
+}

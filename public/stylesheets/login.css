@@ -1,0 +1,55 @@
+.login {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #323232;
+}
+
+.login h2 {
+    margin-top: calc(50% - 100px);
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #57c9f3;
+    padding: 14px;
+}
+
+.login table {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.login table td {
+    margin: 0 10px;
+    height: 40px;
+}
+
+.login table td input {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #c1d4f1;
+    height: 20px;
+    padding: 10px;
+}
+
+.login-submit {
+    text-align: center;
+    height: 24px;
+}
+
+.login-submit input {
+    height: auto !important;
+    width: 80px !important;
+    border-radius: 5px;
+    background-color: rgb(53, 53, 245);
+    color: white;
+    font-size: medium;
+    margin-top: 30px;
+}
+
+.login-submit input:hover {
+    cursor: pointer;
+}
