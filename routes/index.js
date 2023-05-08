@@ -43,8 +43,6 @@ router.get('/post', (req, res, next) => {
       res.render('layouts', { title: 'Bài viết', link: 'news', body: 'news', data: data })
     })
 })
-
-
 /* GET login page */
 
 router.get('/login', (req, res, next) => {

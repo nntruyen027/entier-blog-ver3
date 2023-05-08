@@ -10,14 +10,13 @@
         <a href="" class="post-topic">
             <% if (data.categogy.toString()=='64577e7ddaf0e4da306e3f20' ) { %>
                 <%= 'Câu chuyện phân tích yêu cầu' %>
-                    <% } else if (data[index].categogy.toString()=='64577e7ddaf0e4da306e3f21' ) { %>
+                    <% } else if (data.categogy.toString()=='64577e7ddaf0e4da306e3f21' ) { %>
                         <%= 'Trải nghiệm của Nhà thiết kế' %>
-                            <% } else if (data[index].categogy.toString()=='64577e7ddaf0e4da306e3f22' ) { %>
+                            <% } else if (data.categogy.toString()=='64577e7ddaf0e4da306e3f22' ) { %>
                                 <%= 'Cái khổ của Coder' %>
-                                    <% } else if (data[index].categogy.toString()=='64577f14326d09b6f73a024d' ) { %>
+                                    <% } else if (data.categogy.toString()=='64577f14326d09b6f73a024d' ) { %>
                                         <%= 'Nỗi lòng của Tester' %>
-                                            <% } else if (data[index].categogy.toString()=='64577f14326d09b6f73a024e' )
-                                                { %>
+                                            <% } else if (data.categogy.toString()=='64577f14326d09b6f73a024e' ) { %>
                                                 <%= 'Con đường của Quản lý dự án' %>
                                                     <%} else { %>
                                                         <%= 'Dân IT và cái kết' %>
@@ -31,7 +30,7 @@
         <img src="<%=data.image%>" alt="">
 
         <p>
-            <%= data.detail %>
+            <%- data.detail.replaceAll('\n', '<br>' ) %>
         </p>
 
 

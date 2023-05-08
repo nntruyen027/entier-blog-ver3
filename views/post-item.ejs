@@ -7,14 +7,13 @@
         <a href="" class="post-topic">
             <% if (post.categogy.toString()=='64577e7ddaf0e4da306e3f20' ) { %>
                 <%= 'Câu chuyện phân tích yêu cầu' %>
-                    <% } else if (post[index].categogy.toString()=='64577e7ddaf0e4da306e3f21' ) { %>
+                    <% } else if (post.categogy.toString()=='64577e7ddaf0e4da306e3f21' ) { %>
                         <%= 'Trải nghiệm của Nhà thiết kế' %>
-                            <% } else if (post[index].categogy.toString()=='64577e7ddaf0e4da306e3f22' ) { %>
+                            <% } else if (post.categogy.toString()=='64577e7ddaf0e4da306e3f22' ) { %>
                                 <%= 'Cái khổ của Coder' %>
-                                    <% } else if (post[index].categogy.toString()=='64577f14326d09b6f73a024d' ) { %>
+                                    <% } else if (post.categogy.toString()=='64577f14326d09b6f73a024d' ) { %>
                                         <%= 'Nỗi lòng của Tester' %>
-                                            <% } else if (post[index].categogy.toString()=='64577f14326d09b6f73a024e' )
-                                                { %>
+                                            <% } else if (post.categogy.toString()=='64577f14326d09b6f73a024e' ) { %>
                                                 <%= 'Con đường của Quản lý dự án' %>
                                                     <%} else { %>
                                                         <%= 'Dân IT và cái kết' %>
