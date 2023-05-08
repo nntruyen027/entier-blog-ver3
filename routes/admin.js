@@ -1,7 +1,7 @@
 var express = require('express');
 const path = require('path');
 var router = express.Router();
-var postRouter = require('./post');
+var postRouter = require('./post-admin');
 
 /* GET admin page. */
 router.get('/', function (req, res, next) {

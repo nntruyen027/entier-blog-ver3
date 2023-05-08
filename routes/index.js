@@ -44,6 +44,16 @@ router.get('/post', (req, res, next) => {
     })
 })
 
+router.get('/post/:id', (req, res, next) => {
+  postModel.findById(req.params.id)
+    .then(data => {
+      console.log(data)
+      res.render('layouts', { title: `Bài viết - ${data.title}`, link: 'news', body: 'post-detail', data: data });
+    }).catch(err => {
+      res.render('err');
+    })
+})
+
 /* GET login page */
 
 router.get('/login', (req, res, next) => {
