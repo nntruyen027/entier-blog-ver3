@@ -44,15 +44,6 @@ router.get('/post', (req, res, next) => {
     })
 })
 
-router.get('/post/:id', (req, res, next) => {
-  postModel.findById(req.params.id)
-    .then(data => {
-      console.log(data)
-      res.render('layouts', { title: `Bài viết - ${data.title}`, link: 'news', body: 'post-detail', data: data });
-    }).catch(err => {
-      res.render('error');
-    })
-})
 
 /* GET login page */
 
@@ -67,5 +58,15 @@ router.post('/login', passport.authenticate('local-login', {
 }), (req, res, next) => {
   res.redirect('/admin');
 });
+
+router.get('/post/:id', (req, res, next) => {
+  postModel.findById(req.params.id)
+    .then(data => {
+      console.log(data)
+      res.render('layouts', { title: `Bài viết - ${data.title}`, link: 'news', body: 'post-detail', data: data });
+    }).catch(err => {
+      res.render('error');
+    })
+})
 
 module.exports = router;
