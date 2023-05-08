@@ -50,7 +50,7 @@ router.get('/post/:id', (req, res, next) => {
       console.log(data)
       res.render('layouts', { title: `Bài viết - ${data.title}`, link: 'news', body: 'post-detail', data: data });
     }).catch(err => {
-      res.render('err');
+      res.render('error');
     })
 })
 

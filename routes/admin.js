@@ -5,12 +5,12 @@ var postRouter = require('./post-admin');
 
 /* GET admin page. */
 router.get('/', function (req, res, next) {
-    res.render('layouts-admin', { title: 'Trang chủ', link: 'home', body: 'home' })
+    res.render('layouts-admin', { title: 'Trang chủ', link: 'home', body: 'home', data: '' })
 });
 
 
 router.get('/introduce', function (req, res, next) {
-    res.render('layouts-admin', { title: 'Giới thiệu', link: 'introduce', body: 'introduce' })
+    res.render('layouts-admin', { title: 'Giới thiệu', link: 'introduce', body: 'introduce', data: '' })
 });
 
 router.use('/post', postRouter);

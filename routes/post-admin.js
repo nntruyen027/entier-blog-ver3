@@ -15,21 +15,9 @@ router.get('/', function (req, res, next) {
         })
 });
 
-router.get('/:id', function (req, res, next) {
-    postModel.findById(req.params.id)
-        .then(data => {
-            console.log(data)
-            res.render('layouts', { title: `Bài viết - ${data.title}`, link: 'news', body: 'post-detail', data: data });
-        }).catch(err => {
-            res.render('err');
-        })
-
-})
-
 router.get('/add', function (req, res, next) {
-    res.render('layouts-admin', { title: 'Thêm bài viết', link: 'add-post', body: 'add-post' })
+    res.render('layouts-admin', { title: 'Thêm bài viết', link: 'add-post', body: 'add-post', data: '' })
 });
-
 
 router.post('/add', upload.single('image'), function (req, res, next) {
     var today = new Date();
@@ -72,4 +60,16 @@ router.post('/add', upload.single('image'), function (req, res, next) {
 
 })
 
+
+router.get('/:id', function (req, res, next) {
+
+    postModel.findById(req.params.id)
+        .then(data => {
+            console.log(data)
+            res.render('layouts-admin', { title: `Bài viết - ${data.title}`, link: 'news', body: 'post-detail', data: data });
+        }).catch(err => {
+            res.render('error');
+        })
+
+})
 module.exports = router;
